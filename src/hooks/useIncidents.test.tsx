@@ -38,7 +38,7 @@ jest.mock("../api/fake-api", () => ({
 
 // Wrapper to test the hook via rendering
 function IncidentHookTester() {
-  const incidents = useIncidents();
+  const { incidents } = useIncidents();
 
   return (
     <div>

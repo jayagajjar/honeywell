@@ -9,4 +9,9 @@
   width: 100%;
 }
 
-
+.loader {
+  font-size: 18px;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}

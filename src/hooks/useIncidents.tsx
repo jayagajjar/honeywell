@@ -13,8 +13,9 @@ type IncidentWithLocation = Incident & {
 
 const { getLocations, getIncidentsByLocationId } = api;
 
-export default function useIncidents(): IncidentWithLocation[] {
+export default function useIncidents() {
   const [incidents, setIncidents] = useState<IncidentWithLocation[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,10 +47,11 @@ export default function useIncidents(): IncidentWithLocation[] {
       );
 
       setIncidents(sortedIncidents);
+      setLoading(false);
     };
 
     fetchData();
   }, []);
 
-  return incidents;
+  return { incidents, loading };
 }
