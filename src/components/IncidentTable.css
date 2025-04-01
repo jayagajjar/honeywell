@@ -1,0 +1,46 @@
+.incident-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #2c2c2c;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.incident-table .app-title {
+  background-color: #2c2c2c;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  padding: 14px 20px;
+  font-weight: bold;
+  border: 1px solid #333;
+}
+
+.incident-table thead tr:nth-child(2) th {
+  background-color: #404040;
+  text-align: left;
+  padding: 12px 16px;
+  border: 1px solid #333;
+}
+
+.incident-table td {
+  padding: 12px 16px;
+  border: 1px solid #333;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.incident-table tbody tr:hover {
+  background-color: #202020;
+}
+
+.incident-table img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 4px;
+}

@@ -1,0 +1,52 @@
+.incident-list-container {
+    padding: 1rem;
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+  
+  .incident-list-title {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .incident-item {
+    border-top: 1px solid #444;
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .incident-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  
+  .incident-meta {
+    flex: 1;
+  }
+  
+  .incident-date {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 4px;
+  }
+  
+  .incident-location {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .incident-name {
+    font-size: 14px;
+    color: #fff;
+    margin: 4px 0;
+  }
+  
+  .incident-description {
+    font-size: 13px;
+    color: #ccc;
+  }
+  
