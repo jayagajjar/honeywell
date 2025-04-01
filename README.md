@@ -34,3 +34,7 @@ cd honeywell
 npm install
 npm run dev
 ```
+
+## Deployed at
+
+https://honeywell-ashy.vercel.app/
