@@ -1,12 +1,36 @@
-# React + Vite
+# Incident Dashboard (Coding Challenge)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based incident management dashboard that fetches incident data from a fake API, sorts it by priority and datetime, and displays it in a responsive UI (table on desktop, list on mobile).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18
+- TypeScript
+- CSS Modules
+- Vite (for dev server and build)
+- Responsive Design (Table + List views)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Fetches incident data by location
+- Filters out duplicate incidents by `id`
+- Sorts by:
+  - Priority (ascending: High → Low)
+  - DateTime (descending: Newest first)
+- Renders as a **table** for screen width >600px
+- Renders as a **list** for screen width <=600px
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/jayagajjar/honeywell.git
+cd honeywell
+npm install
+npm run dev
+```
